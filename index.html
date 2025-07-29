@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,37 +10,37 @@
 <body>
   <header class="header">
     <div class="logo">EasyBiz</div>
-    <div class="tagline">Trend Chaos is On</div>
+    <input class="search-bar" type="text" placeholder="Search trending TikTok products..." />
     <div class="nav">
-      <button class="login-btn">Login / Register</button>
+      <button class="login-btn">Login</button>
       <div class="cart-icon">🛒</div>
     </div>
   </header>
 
-  <main>
-    <section class="category trends-for-him">
-      <h2>Trends for Him</h2>
-      <img src="assets/images/male-fashion.jpg" alt="Men's Trend" />
+  <main class="container">
+    <section class="category">
+      <div class="bar">Trends for Him</div>
+      <img src="assets/images/him.jpg" alt="Trends for Him" class="category-img" />
     </section>
-    <section class="category trends-for-her">
-      <h2>Trends for Her</h2>
-      <img src="assets/images/female-fashion.jpg" alt="Women's Trend" />
+    <section class="category">
+      <div class="bar">Trends for Her</div>
+      <img src="assets/images/her.jpg" alt="Trends for Her" class="category-img" />
     </section>
-    <section class="category gym">
-      <h2>Gym & Workout</h2>
-      <img src="assets/images/gym-gear.jpg" alt="Gym Gear" />
+    <section class="category">
+      <div class="bar">Gym & Workout</div>
+      <img src="assets/images/gym.jpg" alt="Gym & Workout" class="category-img" />
     </section>
-    <section class="category viral">
-      <h2>Viral Products</h2>
-      <img src="assets/images/viral-product.jpg" alt="Viral Product" />
+    <section class="category">
+      <div class="bar">Viral Products</div>
+      <img src="assets/images/viral.jpg" alt="Viral Products" class="category-img" />
     </section>
-    <section class="category latest">
-      <h2>Latest Trends</h2>
-      <img src="assets/images/latest.jpg" alt="Latest Trends" />
+    <section class="category">
+      <div class="bar">Latest Trends</div>
+      <img src="assets/images/latest.jpg" alt="Latest Trends" class="category-img" />
     </section>
 
     <section class="dashboard">
-      <h2>My Dashboard</h2>
+      <div class="bar">Dashboard</div>
       <div class="dashboard-grid">
         <div class="box">Order Summary</div>
         <div class="box">Wallet</div>
@@ -49,11 +48,29 @@
         <div class="box">Settings</div>
       </div>
     </section>
+
+    <section class="subscription">
+      <div class="bar">Subscription Plans</div>
+      <div class="plans">
+        <div class="plan">
+          <h3>₹299</h3>
+          <p>3 Months Access</p>
+        </div>
+        <div class="plan">
+          <h3>₹999</h3>
+          <p>1 Year Access</p>
+        </div>
+        <div class="plan trial">
+          <h3>Free Trial</h3>
+          <p>7 Days</p>
+        </div>
+      </div>
+    </section>
   </main>
 
   <div class="chatbot">💬 Jet</div>
 
-  <footer>
+  <footer class="footer">
     &copy; 2025 EasyBiz. All rights reserved.
   </footer>
 </body>

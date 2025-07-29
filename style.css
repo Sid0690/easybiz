@@ -2,78 +2,124 @@
 body {
   margin: 0;
   font-family: 'Playfair Display', serif;
-  background-color: #014421;
-  color: gold;
+  background-color: #ffffff;
+  color: #014421;
 }
-
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  background-color: #013d38;
+  padding: 15px 20px;
+  background-color: #014421;
+  color: gold;
 }
-
 .logo {
-  font-size: 2em;
+  font-size: 1.8em;
   font-weight: bold;
 }
-
-.tagline {
-  font-style: italic;
-  font-size: 1em;
+.search-bar {
+  flex-grow: 1;
+  margin: 0 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
 }
-
 .nav {
   display: flex;
   gap: 15px;
 }
-
 .login-btn {
   background-color: gold;
   color: #014421;
   padding: 5px 10px;
   border: none;
   border-radius: 5px;
+  font-weight: bold;
 }
-
 .cart-icon {
   font-size: 1.5em;
 }
-
+.container {
+  padding: 20px;
+}
 .category {
-  padding: 20px;
-  text-align: center;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  border: 2px solid #014421;
+  border-radius: 8px;
+  overflow: hidden;
 }
-
-.category img {
-  width: 90%;
-  max-width: 400px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px #000;
+.bar {
+  background-color: gold;
+  color: #014421;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 1.2em;
 }
-
+.category-img {
+  width: 100%;
+  display: block;
+}
 .dashboard {
-  background-color: #022f27;
-  padding: 20px;
-  text-align: center;
+  margin-top: 30px;
+  background-color: #ffffff;
+  border: 2px solid #014421;
+  border-radius: 8px;
+  overflow: hidden;
 }
-
+.dashboard .bar {
+  background-color: #014421;
+  color: gold;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 1.2em;
+}
 .dashboard-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 15px;
-  margin-top: 10px;
+  padding: 15px;
 }
-
 .box {
   background-color: gold;
   color: #014421;
   padding: 15px;
-  border-radius: 8px;
+  border-radius: 5px;
+  text-align: center;
   font-weight: bold;
 }
-
+.subscription {
+  margin-top: 30px;
+  background-color: #ffffff;
+  border: 2px solid #014421;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 15px;
+}
+.subscription .bar {
+  background-color: #014421;
+  color: gold;
+}
+.plans {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 15px;
+}
+.plan {
+  background-color: gold;
+  color: #014421;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  flex: 1 1 150px;
+}
+.trial {
+  background-color: #eee;
+  color: #014421;
+  border: 2px dashed #014421;
+}
 .chatbot {
   position: fixed;
   bottom: 20px;
@@ -84,11 +130,11 @@ body {
   border-radius: 50%;
   font-size: 1.2em;
   cursor: pointer;
-  box-shadow: 0 0 10px #000;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
-
-footer {
-  background-color: #013d38;
+.footer {
+  background-color: #014421;
+  color: gold;
   text-align: center;
-  padding: 10px;
+  padding: 10px 0;
 }
